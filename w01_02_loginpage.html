@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인페이지</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!--헤드안에(타이틀 밑, 스타일밖)에 폰트 링크넣기.-->
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+    <style>
+        * { /* '*' 은 모든 태그에 다 먹인다는 뜻. 주석처리 : 컨트롤 + / 누르면 알아서 됨*/
+            font-family: 'Song Myung', serif;
+
+        }
+
+        /*폰트사이트 : https://fonts.google.com/?subset=korean*/
+        .mytitle {
+            background-color: green;
+
+            width: 300px;
+            height: 200px;
+
+            color: white;
+            text-align: center;
+
+            background-image: url("https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg");
+            background-size: cover;
+            background-position: center; /* 주로 이 세 코드는 같이쓰인다.*/
+
+            border-radius: 10px; /*모서리*/
+            padding-top: 20px; /*내부여백*/
+        }
+
+        .wrap {
+            width: 300px;
+            margin: auto; /*외부여백. auto: 중앙으로 오게함*/
+
+
+        }
+
+        .mybtn {
+            width: 100px;
+            margin: auto;
+            display: block; /* 문자로 인식된건 이동되지 않으므로, 블럭으로 인식되게 해줌.*/
+        }
+
+        .red-font { /*중복class*/
+            color: red;
+            font-size: 16px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="mytitle">
+        <h1> 로그인 페이지 </h1>
+        <h5> 아이디, 패스워드를 입력해주세요 </h5>
+    </div>
+    <h1> 로그인 페이지 </h1>
+    <p> ID : <input type="text"/></p>
+    <p> PW : <input type="text"/></p>
+    <p>
+        <button class="mybtn red-font"> 로그인하기</button> <!--명찰 두개 붙이기-->
+    </p>
+
+
+</div>
+
+</body>
+</html>
